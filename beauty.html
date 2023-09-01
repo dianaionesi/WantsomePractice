@@ -3,21 +3,21 @@
     <head>
         <title>Your beauty adviser</title>
         <meta charset="utf-8" />
-        <meta name="description" content="14 august 2023" />
-        <meta name="keywords" content="14 august 2023" />
+        <meta name="description" content="beauty" />
+        <meta name="keywords" content="besuty" />
     </head>
     <body>
         <img src="assets/beauty.png" width="100px" height="100px">
         <h1>Your beauty adviser is here!</h1>
         <nav class="meniu">
              <ul>
-              <li><a href="#">Diagnoza tipului de ten</a></li>
-              <li><a href="#">Rutina ta de skincare</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Cere ajutorul unui specialist</a></li>
+              <li><a href="#caracteristici-ten">Diagnoza tipului de ten</a></li>
+              <li><a href="">Rutina ta de skincare</a></li>
+              <li><a href="https://skinseen.ro/produse-ten" target="_blank">Shop</a></li>
+              <li><a href="#formular-programare">Cere ajutorul unui specialist</a></li>
              </ul>
          </nav>
-        <div class="tipuri-de-ten">
+        <div class="info-tipuri-de-ten" id="caracteristici-ten">
             <p>Pentru a-ți crea o rutină de skincare corectă trebuie mai întăi să identifici cu certitudine ce tip de ten ai. Cel mai sigur, te poți programa la unul din medicii noștri dermatologi, însă, până atunci, iată câteva indicii care să te ajute să identifici ce tip de ten ai:</p>
             <ol>
                 <li><h3>Ten normal</h3></li>
@@ -60,15 +60,49 @@
                         <li>Tenul sensibil reacționează imediat la aplicarea oricărui tip de produs.</li>
                     </ul>
             </ol>
+        </div>
+            <br>
+        <div class="selector-tip-ten">
+            <p>Acum că ai citit aceste descrieri ale fiecărui tip de ten, ce tip de ten crezi că ai?</p>
+            <select name="tip-ten">
+                <option value="normal"> Ten normal</option>
+                <option value="mixt"> Ten mixt</option>
+                <option value="gras"> Ten gras</option>
+                <option value="uscat"> Ten uscat</option>
+                <option value="sensibil"> Ten sensibil</option>
+            </select>
         </div>    
+            <br>
+            <p>Dacă încă ești nesigur/ă, programează un consult la unul dintre medicii noștri completând formularul de mai jos:</p>
+        <div class="formular-consultatie">      
+            <form action="action_page.php" target="_blank" method="post" id="formular-programare">
+                <label for="nume">Nume și prenume</label><br>
+                <input type="text" id="nume" placeholder="Popescu Ioana"><br><br>
 
+                <label for="telefon">Nr. de telefon</label><br>
+                <input type="tel" id="telefon" required placeholder="+40 742 543 000"><br><br>
 
+                <label for="email">Email</label><br>
+                <input type="email" id="email" required placeholder="popescuioana@gmail.com"><br><br>
 
+                <label for="data-nasterii">Data nașterii</label><br>
+                <input type="date" id="data-nasterii" required placeholder="20.03.1992"><br><br>
+
+                <label>Doresc programare la:</label><br>
+                <label for="nume-doctor1">Bio Terra Med Grivița (cu / fără bilet de trimitere)</label>
+                <input type="radio" name="doctor" id="nume-doctor1"><br>
+                <label for="nume-doctor2">Bio Terra Med Primăverii (cu plată)</label>
+                <input type="radio" name="doctor" id="nume-doctor2"><br><br>
+
+                <label>Doresc să:</label><br>
+                <label for="plata-online">primesc link pentru plata online, după stabilirea detaliilor programării</label>
+                <input type="radio" name="optiune-plata" id="plata-online"><br>
+                <label for="plata-receptie">plătesc la recepție</label>
+                <input type="radio" name="optiune-plata" id="plata-receptie"><br><br>
+                <label for="detalii-problema">Opțional, poți să ne dai mai multe detalii despre problemele cu care se confruntă tenul tău în prezent:</label><br>
+                <textarea id="detalii-problema" rows="10" cols="50" placeholder="Tastează aici..."></textarea>
                 
-       
-
-
-
-      </div>
+            </form>
+        </div>    
     </body>
 </html>
