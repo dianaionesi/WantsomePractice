@@ -10,47 +10,57 @@
     <body>
         <form action="weather.html" target="_blank" method="GET">
             <h3>Pizza order</h3>
-            <label for="input_nume">Your name</label>
-            <input id="input_nume" type="text"/>
+            <label for="nume">Your name:</label>
+            <input id="nume" type="text" required minlength="3" maxlength="10"/>
             <br>
             <br>
-            <label>Your email</label>
-            <input type="text" />
+            <label for="email">Your email:</label>
+            <input id="email" type="email" required/>
             <br>
             <br>
-            <label>Toping:</label>
-            <input type="radio" name="sosuri" id="sos_suprem"/> <label for="sos_suprem">Supreme </label>
+            <label>Topping:</label>
+            <input type="radio" name="sosuri" id="sos_suprem" /> <label for="sos_suprem">Supreme </label>
             <input type="radio" name="sosuri" id="sos_vegetarian"/> <label for="sos_vegetarian">Vegetarian</label>
             <input type="radio" name="sosuri"id="sos_hawaii"/> <label for="sos_hawaii">Hawaian</label>
-
             <br>
             <br>
-            <label>Sosuri</label>
+            <label>Sauce:</label>
             <select>
-                <option>Tomato</option>
-                <option selected>Pesto</option>
+                <option selected>Tomato</option>
+                <option>Pesto</option>
             </select>
-
             <br>
-            <label>Extras</label>
+            <br>
+            <label>Extras:</label>
             <input type="checkbox" />Cheese
             <input type="checkbox" />Onion 
             <input type="checkbox" />Olives
             <br>
-            <label>Instructiuni livrare</label>
+            <br>
+            <label>Quantity:</label>
+            <select>
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select>
+            <br>
+            <br>
+            <label>Delivery instructions:</label>
 
             <br>
-            <textarea>
-                "Detalii comanda"
-
-                asd
-
-                <p>Paragraph</p>
+            <textarea required rows="5" cols="30">
+                Text here...
             </textarea>
             <br>
-            <button type="submit">Cauta</button>
-            <br><br>
-            <button type="reset">Resetează</button>
+            <br>
+            <button type="submit">Send order</button>
+            <br>
+            <br>
+            <button type="reset">Reset</button>
         </form>
     </body>
 </html>
