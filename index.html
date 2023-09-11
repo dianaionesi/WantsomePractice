@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>14 august 2023</title>
-        <meta charset="utf-8" />
-        <meta name="description" content="14 august 2023" />
-        <meta name="keywords" content="14 august 2023" />
-    </head>
-    <body>
-        <form action="weather.html" target="_blank" method="GET">
-            <h3>Pizza order</h3>
-            <label for="nume">Your name:</label>
-            <input id="nume" type="text" required minlength="3" maxlength="10" placeholder="e.g. John Hype"/>
-            <br>
-            <br>
-            <label for="email">Your email:</label>
-            <input id="email" type="email" required placeholder="e.g. johnhype@gmail.com"/>
-            <br>
-            <br>
-            <label>Topping:</label>
-            <input type="radio" name="sosuri" id="sos_suprem" value="supreme"/> <label for="sos_suprem">Supreme </label>
-            <input type="radio" name="sosuri" id="sos_vegetarian" value="vegetarian"/> <label for="sos_vegetarian">Vegetarian</label>
-            <input type="radio" name="sosuri"id="sos_hawaii" value="hawaian"/> <label for="sos_hawaii">Hawaian</label>
-            <br>
-            <br>
-            <label>Sauce:</label>
-            <select>
-                <option selected>Tomato</option>
-                <option>Pesto</option>
-            </select>
-            <br>
-            <br>
-            <label>Extras:</label>
-            <input type="checkbox" value="cheese" id="extra-cheese"/><label for="extra-cheese">Cheese</label>
-            <input type="checkbox" value="onion" id="extra-onion"/><label for="extra-onion">Onion </label>
-            <input type="checkbox" value="olives" id="extra-olives"/><label for="extra-olives">Olives</label>
-            <br>
-            <br>
-            <label>Quantity:</label>
-            <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-            </select>
-            <br>
-            <br>
-            <label for="data-livrare">Delivery date:</label>
-            <input type="date" id="data-livrare" required>
-            <br>
-            <br>
-            <label>Delivery instructions:</label>
-            <br>
-            <textarea required rows="5" cols="30">
+
+<head>
+    <title>14 august 2023</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="14 august 2023" />
+    <meta name="keywords" content="14 august 2023" />
+    <link rel="stylesheet" href="selectors.css">
+</head>
+
+<body>
+    <form action="weather.html" target="_blank" method="GET">
+        <h3>Pizza order</h3>
+        <label class="label" for="nume">Your name:</label>
+        <input id="nume" type="text" required minlength="3" maxlength="10" placeholder="e.g. John Hype" />
+        <br />
+        <br />
+        <label class="label" for="email">Your email:</label>
+        <input id="email" type="email" required placeholder="e.g. johnhype@gmail.com" />
+        <br />
+        <br />
+        <label class="label">Topping:</label>
+        <input type="radio" name="sosuri" id="sos_suprem" value="supreme" />
+        <label for="sos_suprem"> Supreme </label>
+        <input type="radio" name="sosuri" id="sos_vegetarian" value="vegetarian" />
+        <label for="sos_vegetarian">Vegetarian</label>
+        <input type="radio" name="sosuri" id="sos_hawaii" value="hawaian" />
+        <label for="sos_hawaii">Hawaian</label>
+        <br />
+        <br />
+        <label class="label">Sauce:</label>
+        <select>
+            <option selected>Tomato</option>
+            <option>Pesto</option>
+        </select>
+        <br />
+        <br />
+        <label class="label">Extras:</label>
+        <input type="checkbox" value="cheese" id="extra-cheese" /><label for="extra-cheese">Cheese</label>
+        <input type="checkbox" value="onion" id="extra-onion" /><label for="extra-onion">Onion
+        </label>
+        <input type="checkbox" value="olives" id="extra-olives" /><label for="extra-olives">Olives</label>
+        <br />
+        <br />
+        <label class="label">Quantity:</label>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+        </select>
+        <br />
+        <br />
+        <label class="label" for="data-livrare">Delivery date:</label>
+        <input type="date" id="data-livrare" required />
+        <br />
+        <br />
+        <label class="label">Delivery instructions:</label>
+        <br />
+        <textarea required rows="5" cols="30">
                 Text here...
             </textarea>
-            <br>
-            <br>
-            <button type="submit">Send order</button>
-            <br>
-            <br>
-            <button type="reset">Reset</button>
-        </form>
-    </body>
+        <br />
+        <br />
+        <button type="submit">Send order</button>
+        <br />
+        <br />
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
 </html>
