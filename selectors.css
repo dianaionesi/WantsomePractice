@@ -3,14 +3,14 @@
 }
 
 input[type="text"]{
-  border-color: green;
+  border: 3px solid green;
 }
 
 input[type="email"]{
     background-color: blue;
 }
 
-button[type="submit"]{
+button{
     background-color: green;
 }
 
