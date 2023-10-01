@@ -1,0 +1,27 @@
+div{
+    width: 250px;
+    height: 250px;
+}    
+
+.yellow{
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.blue{
+    background-color: blue;
+    position: absolute;
+    top: 125px;
+    left: 125px;
+}
+
+.green{
+    background-color: green;
+    position: absolute;
+    top: 125px;
+    left: 125px;
+}
