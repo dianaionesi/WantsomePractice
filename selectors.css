@@ -1,0 +1,19 @@
+.label {
+    color: skyblue;
+}
+
+input[type="text"]{
+  border: 3px solid green;
+}
+
+input[type="email"]{
+    background-color: blue;
+}
+
+button{
+    background-color: green;
+}
+
+body{
+    background-color:  salmon;
+}
