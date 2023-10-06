@@ -29,7 +29,7 @@ h2{
 
 .categ{
     width: 250px;
-    height: 400px;
+    height: 500px;
     border: 1px solid grey;
     border-radius: 5px;
     flex-grow: 1;
@@ -41,10 +41,11 @@ h2{
 }
 
 .background1, .background2, .background3, .background4{
-    height: 180px;
+    height:180px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+   
     
 }
 
@@ -71,6 +72,7 @@ button{
     border: none;
     color: white;
     text-align: center;
+    margin: 20px;
 }
 
 button:hover{
@@ -81,11 +83,16 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 p{
-    padding: 10px 5px;
+    width: 220px;
+    height: 100px;
     font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: center;
+
+    
 }
 
 
