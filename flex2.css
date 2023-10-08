@@ -8,9 +8,10 @@
 }
 
 .child1{
-    background-color: greenyellow;
+    background-color: #DAF7A6;
     width: 300px;
     justify-content: flex-end;
+    padding: 20px;
     
 }
 
@@ -22,8 +23,9 @@
 }
 
 .child21{
-    background-color: red;
+    background-color: #FFA07A;
     height: 350px;
+    padding: 20px;
 }
 
 .child22{
@@ -34,8 +36,10 @@
 }
 
 .child221{
-    background-color: aqua;
+    background-color: #E8DAEF ;
     width: 290px;
+    padding: 20px;
+    
 }
 
 .child222{
@@ -47,10 +51,19 @@
 
 .child2221{
     height: 160px;
-    background-color: aquamarine;
+    background-color: #D5F5E3;
+    padding: 20px;
 }
 
 .child2222{
     height: 160px;
-    background-color: yellow;
+    background-color: #F9E79F;
+    padding: 20px;
+}
+
+h3, h4, p{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+
 }
