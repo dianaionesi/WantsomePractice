@@ -1,0 +1,9 @@
+div{
+    width: 300px;
+    height: 200px;
+    border: 8px dotted red;
+    padding: 10px;
+    background-image:url(girafa3.jpg);
+    background-clip: content-box;
+    background-size: cover;
+}
