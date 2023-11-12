@@ -9,24 +9,28 @@ function computeIncome(sentence) {
 
     console.log(words);
 
-    const numbers = [ ];
 
     let venitTotalLei = 0;
     for(let i = 0; i < words.length; i++) {
         const number = parseFloat(words[i]);
         if (!isNaN(number)) {
-        } if (words[i + 1] === "euro") {
-            venitTotalLei += number * cursEuro;
-          } else if (words[i + 1] === "usd") {
-            venitTotalLei += number * cursDolar;
-          } else if (words[i + 1] === "lei" && words[i].toLowerCase() !== "euro" && words[i].toLowerCase() !== "usd") {
+        } if (words[i + 1] === "euro/luna") {
+            venitTotalLei += number * cursEuro * 12;
+          } else if (words[i + 1] === "usd/luna") {
+            venitTotalLei += number * cursDolar * 12;
+          } else if (words[i + 1] === "lei/luna" || words[i + 1] === "lei") {
+            venitTotalLei += number * 12;
+          } else if (words[i + 1] === "lei/an")
             venitTotalLei += number;
-          }
+          
+          console.log(venitTotalLei);
         }
+      var nume = words[0];
+      var mesaj = "Venitul total anual al lui " + nume + " este de " + venitTotalLei + " lei."
       
-      return "Venitul total anual al lui NUME este de ${venitTotalLei.toFixed(2)}lei."
+      return mesaj;
     }
 
-console.log(computeIncome(firstSentence.replace("NUME", "Ion")));    
-console.log(computeIncome(secondSentence.replace("NUME", "Andrei")));
+console.log(computeIncome(firstSentence));    
+console.log(computeIncome(secondSentence));
 
