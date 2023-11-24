@@ -1,1 +1,30 @@
 @import 'colors';
+@import 'typography';
+@import 'buttons';
+
+header{
+    background-color: $mirage;
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 165px;
+    #logo{
+        padding: 30px 20px;
+    }
+
+}
+
+nav {
+    ul{
+        display: flex;
+       li{
+        @extend %h2;
+        color: white;
+        font-size: 25px;
+        list-style: none;
+        padding: 20px;
+           &:hover{
+               color: $beaver;
+           }
+       }
+   }
+}       
