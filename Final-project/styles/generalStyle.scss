@@ -2,15 +2,22 @@
 @import 'typography';
 @import 'buttons';
 
-header{
+body {
+    margin: 0;
+    
+}
+
+.hero {
+    height: 100vh;
     background-color: $mirage;
+    padding: 45px 165px;
+    
+}
+
+header{
     display: flex;
     justify-content: space-between;
-    padding: 65px 165px;
-    #logo{
-        padding: 30px 20px;
-    }
-
+    align-items: center;
 }
 
 nav {
@@ -28,3 +35,4 @@ nav {
        }
    }
 }       
+

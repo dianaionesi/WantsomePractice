@@ -1,18 +1,8 @@
 p {
   font-family: "League Spartan", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  color: #17192b;
-}
-
-h1 {
-  color: #17192b;
-  font-family: League Spartan;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 80px; /* 100% */
-  letter-spacing: -1px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #242b37;
 }
 
 nav ul li {
@@ -23,34 +13,13 @@ nav ul li {
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -0.5px;
-}
-
-h4 {
-  color: #5c6779;
-  text-align: center;
-  font-family: League Spartan;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 2.5px;
 }
 
 p {
   font-family: "League Spartan", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  color: #17192b;
-}
-
-h1 {
-  color: #17192b;
-  font-family: League Spartan;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 80px; /* 100% */
-  letter-spacing: -1px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #242b37;
 }
 
 nav ul li {
@@ -63,25 +32,20 @@ nav ul li {
   letter-spacing: -0.5px;
 }
 
-h4 {
-  color: #5c6779;
-  text-align: center;
-  font-family: League Spartan;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 2.5px;
+body {
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  background-color: #17192b;
+  padding: 45px 165px;
 }
 
 header {
-  background-color: #17192b;
   display: flex;
   justify-content: space-between;
-  padding: 65px 165px;
-}
-header #logo {
-  padding: 30px 20px;
+  align-items: center;
 }
 
 nav ul {

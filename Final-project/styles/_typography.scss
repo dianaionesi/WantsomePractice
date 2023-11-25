@@ -1,6 +1,6 @@
 @import 'colors';
 
-%normalText1 {
+p {
     font-family: 'League Spartan', sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -8,22 +8,11 @@
 }
 
 
-
-p {
+%normalText2 {
     font-family: 'League Spartan', sans-serif;
     font-size: 16px;
     line-height: 26px;
     color: $mirage;
-}
-
-h1 {
-    color: $mirage;
-    font-family: League Spartan;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 80px; /* 100% */
-    letter-spacing: -1px;
 }
 
 %h2 {
@@ -46,7 +35,7 @@ h1 {
     letter-spacing: -0.25px;
 }
 
-h4 {
+%h4 {
     color: $shuttleGray;
     text-align: center;
     font-family: League Spartan;
