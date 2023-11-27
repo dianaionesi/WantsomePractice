@@ -1,6 +1,6 @@
-@import 'colors';
-@import 'typography';
-@import 'buttons';
+@import '_colors';
+@import '_typography';
+@import '_buttons';
 
 body {
     margin: 0;
@@ -24,7 +24,7 @@ nav {
     ul{
         display: flex;
        li{
-        @extend %h2;
+        @extend %heading2;
         color: white;
         font-size: 25px;
         list-style: none;
@@ -34,5 +34,9 @@ nav {
            }
        }
    }
-}       
+}  
+
+h1{
+    @extend %heading2;
+}
 

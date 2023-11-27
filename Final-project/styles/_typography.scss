@@ -15,7 +15,17 @@ p {
     color: $mirage;
 }
 
-%h2 {
+%heading1{
+    color: #17192B;
+    font-family: League Spartan;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 80px; /* 100% */
+    letter-spacing: -1px;
+}
+
+%heading2 {
     color: $ebonyClay;
     font-family: League Spartan;
     font-size: 48px;
@@ -25,7 +35,7 @@ p {
     letter-spacing: -0.5px;
 }
 
-%h3 {
+%heading3 {
     color: $mirage;
     font-family: League Spartan;
     font-size: 20px;
@@ -35,7 +45,7 @@ p {
     letter-spacing: -0.25px;
 }
 
-%h4 {
+%heading4 {
     color: $shuttleGray;
     text-align: center;
     font-family: League Spartan;
